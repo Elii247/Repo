@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Alerta Panamá</title> <!-- Título actualizado -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border: 1px solid #e3e8ee;
+            border-radius: 8px;
+            background-color: #f9fbfc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <img src="../static/imagenes/Lupa.png.png" height="200" width="200"/>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Nombre de usuario o correo electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <div class="footer">
+                <a href="/signup">¿Crear Cuenta?</a><br>
+                <a href="/forgot_password">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

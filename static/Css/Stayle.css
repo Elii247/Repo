@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa; /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo del formulario */
+.login-form {
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Ajustar el tamaño de la imagen del logo */
+.logo {
+    width: 20px;   /* Ajusta el tamaño de la imagen a 150px de ancho */
+    height: auto;   /* Mantiene la proporción original de la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+/* Estilo al enfocar el campo de entrada */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3897f0; /* Color de Instagram */
+    box-shadow: 0 0 5px rgba(56, 151, 240, 0.5);
+    outline: none;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #66bb6a; /* Color verde claro */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Estilos para los enlaces en el pie de página */
+.footer {
+    margin-top: 20px;
+}
+
+.footer a {
+    display: block;  /* Hace que los enlaces se muestren en una nueva línea */
+    font-size: 5px;  /* Tamaño del texto */
+    color: #3897f0;  /* Color azul para los enlaces */
+    text-decoration: none;  /* Eliminar subrayado por defecto */
+    margin: 4px 0;  /* Espaciado entre los enlaces */
+}
+
+/* Estilo cuando el cursor pasa sobre los enlaces */
+.footer a:hover {
+    text-decoration: underline;  /* Subrayado al pasar el mouse */
+    font-weight: bold;  /* Poner el texto en negrita al pasar el cursor */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    .login-form {
+        padding: 20px;
+    }
+    .logo {
+        width: 160px;
+    }
+}
