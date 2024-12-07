@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión - Alerta Panamá</title> <!-- Título actualizado -->
+    <title>Iniciar sesión - ALP</title>
     <style>
+        /* Estilos generales del cuerpo de la página */
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Poppins', sans-serif; /* Fuente de la página */
+            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Fondo con un gradiente suave */
+            display: flex; /* Utiliza flexbox para centrar el contenido */
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+            height: 100vh; /* Asegura que el contenido ocupe toda la altura de la ventana */
+            margin: 0; /* Elimina el margen predeterminado */
         }
+
+        /* Estilos para el formulario de inicio de sesión */
         .login-form {
-            width: 100%;
-            max-width: 400px;
-            background-color: #ffffff;
-            padding: 40px 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            text-align: center;
+            width: 100%; /* El formulario ocupa el 100% del ancho disponible */
+            max-width: 400px; /* Ancho máximo de 400px */
+            background-color: #87CEEB; /* Fondo blanco para el formulario */
+            padding: 40px 30px; /* Espaciado interno (padding) para el formulario */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra sutil alrededor del formulario */
+            text-align: center; /* Centra el texto dentro del formulario */
         }
+
+        /* Estilos para el logo */
         .logo {
-            width: 150px;
-            margin-bottom: 20px;
+            width: 150px; /* Establece el tamaño del logo */
+            margin-bottom: 20px; /* Espacio debajo del logo */
         }
+
+        /* Estilos para el título */
+        .title {
+            <h1 class= "titulo">Alerta Panamá</h1>
+            font-size: 24px; /* Tamaño de la fuente del título */
+            font-weight: bold; /* Hace el título en negrita */
+            margin-bottom: 15px; /* Espacio debajo del título */
+        }
+
+        /* Estilos para los campos de entrada (usuario y contraseña) */
         input[type="text"],
         input[type="password"] {
-            width: 100%;
-            padding: 14px;
-            margin: 12px 0;
-            border: 1px solid #e3e8ee;
-            border-radius: 8px;
-            background-color: #f9fbfc;
+            width: 100%; /* Los campos ocupan todo el ancho disponible */
+            padding: 14px; /* Espaciado interno en los campos */
+            margin: 12px 0; /* Espacio entre los campos de entrada */
+            border: 1px solid #e3e8ee; /* Borde de color gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+            background-color: #f9fbfc; /* Fondo claro para los campos */
+        }
+
+        /* Estilo para los enlaces del pie de página */
+        .footer {
+            margin-top: 20px; /* Espacio en la parte superior del pie de página */
+        }
+
+        /* Estilo para los enlaces en el pie de página */
+        .footer a {
+            font-size: 14px; /* Tamaño de la fuente de los enlaces */
+            color: #388e3c; /* Color de los enlaces (azul de Instagram) */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+        }
+
+        /* Efecto hover para los enlaces */
+        .footer a:hover {
+            text-decoration: underline; /* Añade subrayado cuando se pasa el ratón sobre el enlace */
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Contenedor del formulario de inicio de sesión -->
         <div class="login-form">
-            <img src="../static/imagenes/Lupa.png.png" height="200" width="200"/>
+            <!-- Título de la página -->
+            <div class="title">Alerta Panamá</div>
+
+            <!-- Logo de la página -->
+            <img src="../static/imagenes/Lupa.png.png" height="150" width="150" alt="Logo"/>
+
+            <!-- Formulario de inicio de sesión -->
             <form action="/login" method="POST">
+                <!-- Campo para el nombre de usuario o correo electrónico -->
                 <input type="text" name="username" placeholder="Nombre de usuario o correo electrónico" required>
+
+                <!-- Campo para la contraseña -->
                 <input type="password" name="password" placeholder="Contraseña" required>
+
+                <!-- Botón para enviar el formulario -->
                 <button type="submit">Iniciar sesión</button>
             </form>
+
+            <!-- Enlaces para crear cuenta o recuperar contraseña -->
             <div class="footer">
-                <a href="/signup">¿Crear Cuenta?</a><br>
+                <!-- Enlace para ir a la página de registro -->
+                <a href="/signup">Crear Cuenta</a><br>
+                <!-- Enlace para ir a la página de recuperación de contraseña -->
                 <a href="/forgot_password">¿Olvidaste tu contraseña?</a>
             </div>
         </div>

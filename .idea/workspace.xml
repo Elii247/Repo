@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97455e48-3df5-48db-ab3a-b24f1c30e93e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Proyecto FinalP4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Temples/forgot_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Temples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Temples/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Temples/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Css/Stayle.css" afterDir="false" />
+    <list default="true" id="97455e48-3df5-48db-ab3a-b24f1c30e93e" name="Changes" comment="Eli">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Temples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Css/Stayle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Css/Stayle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +43,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Eli/PycharmProjects/Proyecto FinalP4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,12 +71,39 @@
       <workItem from="1731524426450" duration="1651000" />
       <workItem from="1731526162527" duration="1916000" />
       <workItem from="1731528243431" duration="366000" />
-      <workItem from="1731901816638" duration="4815000" />
+      <workItem from="1731901816638" duration="8943000" />
+      <workItem from="1731913420753" duration="717000" />
+      <workItem from="1732478993234" duration="13000" />
+      <workItem from="1733502222493" duration="577000" />
     </task>
+    <task id="LOCAL-00001" summary="Eli">
+      <option name="closed" value="true" />
+      <created>1731907152716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731907152716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Eli" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eli" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Proyecto_FinalP4$app.coverage" NAME="app Coverage Results" MODIFIED="1731526357253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

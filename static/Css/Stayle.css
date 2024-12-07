@@ -1,25 +1,13 @@
-* {
+
+/* Estilo del fondo */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fuente general */
-body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa; /* Fondo claro */
-    display: flex;
+    background: linear-gradient(150deg,#388e3c,#66bb6a);  /* Celeste claro */
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-/* Contenedor principal */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
 /* Estilo del formulario */
@@ -31,15 +19,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 20px; /* Añadir margen para separar del borde */
 }
 
-/* Ajustar el tamaño de la imagen del logo */
+/* Estilo para el logo */
 .logo {
-    width: 20px;   /* Ajusta el tamaño de la imagen a 150px de ancho */
-    height: auto;   /* Mantiene la proporción original de la imagen */
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    width: 20px;
+    height: auto;
+    margin-bottom: 20px;
 }
-
 
 /* Estilos para los campos de entrada */
 input[type="text"],
@@ -53,32 +41,43 @@ input[type="password"] {
     background-color: #fafafa;
     transition: all 0.3s ease;
     color: #333;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
 }
 
 /* Estilo al enfocar el campo de entrada */
 input[type="text"]:focus,
 input[type="password"]:focus {
-    border-color: #3897f0; /* Color de Instagram */
+    border-color: #3897f0;
     box-shadow: 0 0 5px rgba(56, 151, 240, 0.5);
     outline: none;
 }
 
-/* Estilo del botón */
+/* Estilo del botón - Estilizado */
 button {
     width: 100%;
     padding: 15px;
-    background-color: #66bb6a; /* Color verde claro */
-    border: none;
-    border-radius: 5px;
+    background-color: #66bb6a; /* Verde claro */
+    border: 2px solid transparent;
+    border-radius: 30px;
     color: white;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Efecto hover para el botón */
 button:hover {
     background-color: #388e3c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Efecto de clic para el botón */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para los enlaces en el pie de página */
@@ -87,28 +86,16 @@ button:hover {
 }
 
 .footer a {
-    display: block;  /* Hace que los enlaces se muestren en una nueva línea */
-    font-size: 5px;  /* Tamaño del texto */
-    color: #3897f0;  /* Color azul para los enlaces */
-    text-decoration: none;  /* Eliminar subrayado por defecto */
-    margin: 4px 0;  /* Espaciado entre los enlaces */
+    display: block;
+    font-size: 14px;
+    color: #3897f0;
+    text-decoration: none;
+    margin: 4px 0;
 }
 
-/* Estilo cuando el cursor pasa sobre los enlaces */
 .footer a:hover {
-    text-decoration: underline;  /* Subrayado al pasar el mouse */
-    font-weight: bold;  /* Poner el texto en negrita al pasar el cursor */
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
-    .login-form {
-        padding: 20px;
-    }
-    .logo {
-        width: 160px;
-    }
-}
+
